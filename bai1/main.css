@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Otomanopee+One&display=swap');
+:root{
+    --main--text-font: 'Otomanopee One', sans-serif;
+    --logo-text-font:'Open Sans', sans-serif;
+    --main-color:#f05723;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}

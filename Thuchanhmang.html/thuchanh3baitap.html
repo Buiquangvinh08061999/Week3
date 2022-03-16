@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="bai1()">Bài 1</button>
+    <button onclick="bai2()">Bài 2</button>
+    <button onclick="bai3()">Bài 3</button>
+</body>
+
+<script>
+    //Viết chuỗi liền 
+    function bai1(){
+        let myColour = ["Red", "Green", "White", "Black"];
+        alert(myColour.join());
+    }
+    //Nhập vào 1 số: VD:2-4-679-8
+    function bai2(){
+        let dayso= prompt("Nhập vào dẫy số");
+        let mang = [dayso[0]];
+        document.write("Dãy số gồm "+dayso +"<br>")
+        for(let i=1; i<=dayso.length;i++){
+            if(dayso[i-1] %2 == 0 && dayso[i] %2 == 0){
+                mang.push("-"+ dayso[i])
+            }else{
+                mang.push(dayso[i])
+            }
+        }
+        document.write(mang.join(""))
+    }
+    // Chữ Hoa thành Chữ Thường và ngược lại
+    function bai3(){
+        let chuoi = prompt("Nhập vào 1 chuỗi: ")
+        let chuHoa = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let chuThuong = 'abcdefghijklmnopqrstuvwxyz';
+        let result = []
+
+        for(let i = 0; i <chuoi.length; i++){
+            if(chuHoa.indexOf(chuoi[i]) !== -1){
+                result.push(chuoi[i].toLowerCase());
+
+            }else if(chuThuong.indexOf(chuoi[i] !== -1)){
+                result.push(chuoi[i].toUpperCase())
+          
+            }else{
+                result.push(chuoi[i])
+            }
+        }
+        alert(result.join(""))
+        }
+
+
+    
+</script>
+</html>
